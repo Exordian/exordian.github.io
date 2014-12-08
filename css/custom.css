@@ -12,7 +12,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 180px;
 }
 .footer {
   position: absolute;
@@ -46,4 +46,9 @@ body > .container {
 
 code {
   font-size: 80%;
+}
+
+/* Prevent Line Breaking after H3 */
+h3 {
+    display:inline;
 }
