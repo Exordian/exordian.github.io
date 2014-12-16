@@ -1,0 +1,58 @@
+<div class="modal fade" id="inventar" tabindex="-1" role="dialog" aria-labelledby="inventarLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="inventarLabel">Inventar hinzufügen</h4>
+      </div>
+      <div class="modal-body">
+          <div class="upload-drop-zone col-lg-12" id="drop-zone">
+            Just drag and drop files here
+          </div>
+            <div class="input-group">
+               <span class="input-group-addon"><span class="fa fa-user"></span></span>
+                <input type="text" class="form-control" placeholder="Beschreibung" name="inventar-beschreibung" id="inventar-beschreibung">
+            </div>
+          <div class="row row-sm-margin">
+            <div class="col-lg-6">
+                <label for="inventar-brennweite"><i class="fa fa-info-circle"></i> Brennweite</label>
+                <select class="form-control" id="inventar-brennweite">
+                  <option>80mm</option>
+                  <option>100mm</option>
+                  <option>200mm</option>
+                  <option>250mm</option>
+                </select>
+            </div>
+            <div class="col-lg-6">
+                <label for="inventar-marke"><i class="fa fa-tag"></i> Marke</label>
+                <select class="form-control" id="inventar-marke">
+                  <option>Canon</option>
+                  <option>Nikon</option>
+                  <option>Leica</option>
+                </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+                <label for="inventar-lichtstärke"><i class="fa fa-sun-o"></i> Lichtstärke</label>
+                <select class="form-control" id="inventar-lichtstärke">
+                  <option>1:28 L</option>
+                </select>
+            </div>
+            <div class="col-lg-6">
+                <label for="inventar-objekttyp"><i class="fa fa-info-circle"></i> Objekttyp</label>
+                <select class="form-control" id="inventar-objekttyp">
+                  <option>Gehäuse</option>
+                  <option>Objektiv</option>
+                  <option>Blitzgerät</option>
+                  <option>Zubehör</option>
+                </select>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="addInventar" data-dismiss="modal">Hinzufügen</button>
+      </div>
+    </div>
+  </div>
+</div>

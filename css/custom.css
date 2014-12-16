@@ -105,3 +105,40 @@ h3 {
   padding: 0;
   margin: 0;
 }
+
+.editable {
+  position: absolute;
+  z-index: 90;
+  left: 205px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0 2px;
+}
+
+.editable i {
+  margin: 0 3px;
+}
+
+.editable .fa-pencil {
+  color: #337ab7;
+}
+
+.editable .fa-times-circle {
+  color: red;
+}
+
+/* layout.css Style */
+.upload-drop-zone {
+  height: 200px;
+  margin-bottom: 20px;
+  color: #ccc;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: #ccc;
+  line-height: 200px;
+  text-align: center
+}
+
+.upload-drop-zone.drop {
+  color: #222;
+  border-color: #222;
+}

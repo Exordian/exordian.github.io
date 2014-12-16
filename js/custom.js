@@ -48,6 +48,7 @@ function loadUserProfile() {
         $('#contentInclude').load("partials/main.html");
         $('#loginInclude').load("partials/anmelden-modal.html");
         $('#registerInclude').load("partials/register-modal.html");
+        $('#inventarInclude').load("partials/inventar-modal.html");
         logout();
         defaultProfileData();
     });
@@ -61,13 +62,11 @@ function loadUserProfile() {
         birthyear = $('#register-birthyear').val();
         login();
         loadUserProfile();
-        $('#register').hide();
     });
     $(document).on ('click', '#loginBtn', function () {
         defaultProfileData();
         username = $('#login-username').val();
         login();
-        $('#login').hide();
     });
     $(document).on ('click', '#logoutLink', function () {
         defaultProfileData();
@@ -76,4 +75,7 @@ function loadUserProfile() {
     $(document).on ('click', '#userLink', function () {
         loadUserProfile();
     });
+    //$(document).on ('click', '#addInventar', function () {
+        //loadUserProfile();
+    //});
 });
