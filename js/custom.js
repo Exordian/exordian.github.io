@@ -124,5 +124,21 @@ function showFilters() {
         $('#filter_forBrand_list').toggle();
     });
 
+    $(document).on('click', '#filter_brand', function () {
+        $('#filter_brand_list').toggle();
+    });
+
+    $(document).on('click', '#filter_obj', function () {
+        $('#filter_obj_list').toggle();
+    });
+
+    $(document).on('click', '#filter_brenn', function () {
+        $('#filter_brenn_list').toggle();
+    });
+
+    $(document).on('click', '#filter_licht', function () {
+        $('#filter_licht_list').toggle();
+    });
+
 });
 
