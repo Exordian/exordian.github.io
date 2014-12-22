@@ -122,22 +122,27 @@ function showFilters() {
     //Filters
     $(document).on('click', '#filter_forBrand', function () {
         $('#filter_forBrand_list').toggle();
+        $('#filter_forBrand > i').toggleClass("fa-caret-right fa-caret-down");
     });
 
     $(document).on('click', '#filter_brand', function () {
         $('#filter_brand_list').toggle();
+        $('#filter_brand > i').toggleClass("fa-caret-right fa-caret-down");
     });
 
     $(document).on('click', '#filter_obj', function () {
         $('#filter_obj_list').toggle();
+        $('#filter_obj > i').toggleClass("fa-caret-right fa-caret-down");
     });
 
     $(document).on('click', '#filter_brenn', function () {
         $('#filter_brenn_list').toggle();
+        $('#filter_brenn > i').toggleClass("fa-caret-right fa-caret-down");
     });
 
     $(document).on('click', '#filter_licht', function () {
         $('#filter_licht_list').toggle();
+        $('#filter_licht > i').toggleClass("fa-caret-right fa-caret-down");
     });
 
 });
