@@ -42,6 +42,14 @@ function loadUserProfile() {
     });
 }
 
+function loadDetailPage () {
+    $('#contentInclude').load("partials/detail.html");
+}
+
+function loadMainPage () {
+    $('#contentInclude').load("partials/main.html");
+}
+
  $(document).ready( function() {
     /* on page load */
     $(function(){
@@ -78,4 +86,11 @@ function loadUserProfile() {
     //$(document).on ('click', '#addInventar', function () {
         //loadUserProfile();
     //});
+    $(document).on ('click', '#detailLink', function () {
+        loadDetailPage();
+    });
+
+    $(document).on ('click', '#logoLink', function () {
+        loadMainPage();
+    });
 });
