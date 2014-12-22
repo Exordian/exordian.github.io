@@ -1,24 +1,39 @@
-<div class="row" id="detail">
-	<div class="row" style="margin-left: 10px; background-color: #e3e3e3;">
-		<!--Symbolbild -->
+<div id="detail">
+
+	<div class="row" style="margin-left: 0px; background-color: #e3e3e3;">
 		<div class="col-md-3" style="padding: 0px;"><img src="http://lorempixel.com/300/225/people" class="img-responsive"></div>
-		<!--Beschreibung -->
 		<div class="col-md-9" style="padding-left: 30px;">
-			<div class="row"><h4>Canon 100mm 1:2.8 L Makro</h4></div>
+			<div class="row"><div class="col-md-12"><h4>Canon 100mm 1:2.8 L Makro</h4></div></div>
 			<div class="row">
 				<div class="col-md-2"><p>Marke<br />Bajonett<br />Objektivtyp<br />Brennweite<br />Lichtstaerke<br /></p><p>Standort<br />Besitzer</p></div>
 				<div class="col-md-4"><p>Canon<br />EF<br />Fixbrennweite<br />100mm<br />1:2.8</p><p>St. Pölten<br />Mani 1 (98% positiv)</p></div>
-				<!--Kalender -->
-				<div class="col-md-3">Kalender</div>
+				<div class="col-md-3">
+
+				<div class="hero-unit">
+                <input  type="text" placeholder="click to show datepicker"  id="example1">
+            	</div>
+
+    	        <script type="text/javascript">
+	            // When the document is ready
+	            $(document).ready(function () {
+	                
+	                $('#example1').datepicker({
+	                    format: "dd/mm/yyyy"
+	                });  
+	            
+	            });
+	       		 </script>
+
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="row" style="padding-top: 30px; margin-left: 10px;">
-		<div class="row"><h4>Ähnliche Artikel</h4></div>
+	<div class="row" style="padding-top: 30px; margin-left: 0px;">
+		<div class="row"><div class="col-md-12"><h4>Ähnliche Artikel</h4></div></div>
 
 	    <div class="col-md-3">
-	        <div class="row"><div class="col-lg-12"><a href="#" id="detailLink" data-target="#detail"><img src="http://lorempixel.com/230/130/people" class="img-responsive"></a></div></div>
+	        <div class="row"><div class="col-lg-12"><a href="#" id="detailLink" data-target="#detail"><img src="http://lorempixel.com/240/130/people" class="img-responsive"></a></div></div>
 	        <div class="row greyBox">
 		        <div class="row"><div class="col-md-12"><a href="#" id="detailLink" data-target="#detail"><h4>Canon 100mm 1:28 L Makro</h4></a></div></div>
 		        <div class="row"><div class="col-md-12"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div></div>
@@ -28,7 +43,7 @@
 	    </div>
 
 	    <div class="col-md-3">
-	        <div class="row"><div class="col-lg-12"><a href="#" id="detailLink" data-target="#detail"><img src="http://lorempixel.com/230/130/people" class="img-responsive"></a></div></div>
+	        <div class="row"><div class="col-lg-12"><a href="#" id="detailLink" data-target="#detail"><img src="http://lorempixel.com/240/130/people" class="img-responsive"></a></div></div>
 	        <div class="row greyBox">
 		        <div class="row"><div class="col-md-12"><a href="#" id="detailLink" data-target="#detail"><h4>Canon 100mm 1:28 L Makro</h4></a></div></div>
 		        <div class="row"><div class="col-md-12"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div></div>
