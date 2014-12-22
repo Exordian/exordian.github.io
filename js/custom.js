@@ -44,6 +44,7 @@ function loadUserProfile() {
 
 function loadDetailPage () {
     $('#contentInclude').load("partials/detail.html");
+
 }
 
 function loadMainPage () {

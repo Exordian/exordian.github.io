@@ -7,24 +7,28 @@
 			<div class="row">
 				<div class="col-md-2"><p>Marke<br />Bajonett<br />Objektivtyp<br />Brennweite<br />Lichtstaerke<br /></p><p>Standort<br />Besitzer</p></div>
 				<div class="col-md-4"><p>Canon<br />EF<br />Fixbrennweite<br />100mm<br />1:2.8</p><p>St. Pölten<br />Mani 1 (98% positiv)</p></div>
-				<div class="col-md-3">
+				<div class="col-md-3"><div id="datepicker-lendingTime" style="margin-top:-20px;"><input type="text" id="input"></div></div>
+				<div class="col-md-3" id="anfrageSendenBtn"><button type="button" class="btn btn-success">Anfrage senden</button></div>
 
-				<div class="hero-unit">
-                <input  type="text" placeholder="click to show datepicker"  id="example1">
-            	</div>
-
-    	        <script type="text/javascript">
-	            // When the document is ready
+				<script type="text/javascript">
 	            $(document).ready(function () {
-	                
-	                $('#example1').datepicker({
-	                    format: "dd/mm/yyyy"
-	                });  
-	            
-	            });
-	       		 </script>
+		            $('#input').hide();
+		            
+		            $('#datepicker-lendingTime').datepicker({
+		                format: "dd/mm/yyyy",
+		                multidate: true,
+		                clearBtn: true
+		            });
+		            
+		            $('#datepicker-lendingTime').datepicker().on('changeDate', function (e) {
+	   					 $('#input').val(e.format());
+	   					 $('#anfrageSendenBtn').show();
+					});
 
-				</div>
+					$('#anfrageSendenBtn').hide();
+	            });
+	       		</script>
+
 			</div>
 		</div>
 	</div>

@@ -149,3 +149,9 @@ h3 {
   margin: 0px; 
   padding: 5px
 }
+
+.datepicker table tr td, .datepicker table tr th {
+  height: 20px !important;
+  width: 20px !important;
+  font-size: 12px !important;
+}
