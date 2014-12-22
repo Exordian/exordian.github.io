@@ -25,11 +25,11 @@
 		            
 		            $('#datepicker-lendingTime').datepicker().on('changeDate', function (e) {
 	   					 $('#input').val(e.format());
-	   					 if($('#input').value == ""){
-	   					 	alert("hello");
+	   					 if(document.getElementById("input").value == ""){
+	   					 	$('#anfrageSendenDiv').hide();
+	   					 }else{
+	   					 	$('#anfrageSendenDiv').show();
 	   					 }
-
-	   					 $('#anfrageSendenDiv').show();
 					});
 
 					$('#anfrageSendenDiv').hide()
