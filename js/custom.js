@@ -51,6 +51,18 @@ function loadMainPage () {
     $('#contentInclude').load("partials/main.html");
 }
 
+/**
+ * Toggle visibility of menue-bar
+ * @returns {undefined}
+ */
+function showFilters() {
+    $('#filters').toggle();
+    return false;
+}
+
+
+
+
 
  $(document).ready( function() {
     /* on page load */
@@ -101,4 +113,16 @@ function loadMainPage () {
     $(document).on ('click', '#userbewertungDoneBtn', function (){
         $('#bewertung1').toggleClass('hide', true);
     });
+
+    //Filterbar
+    $(document).on('click', '.filter_toggle', function(){
+        $('#filters').toggle();
+    });
+
+    //Filters
+    $(document).on('click', '#filter_forBrand', function () {
+        $('#filter_forBrand_list').toggle();
+    });
+
 });
+
