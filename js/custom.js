@@ -60,6 +60,7 @@ function loadMainPage () {
         $('#registerInclude').load("partials/register-modal.html");
         $('#inventarInclude').load("partials/inventar-modal.html");
         $('#anfrageInclude').load("partials/anfrage-modal.html");
+        $('#bewertungInclude').load("partials/userbewertung-modal.html");
         logout();
         defaultProfileData();
     });
