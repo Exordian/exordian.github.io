@@ -1,14 +1,14 @@
 <div id="detail">
 
-	<div class="row" style="margin-left: 0px; background-color: #e3e3e3;">
+	<div class="row" style="margin-left: 0px; background-color: #f6f6f6;">
 		<div class="col-md-3" style="padding: 0px;"><img src="http://lorempixel.com/300/225/people" class="img-responsive"></div>
 		<div class="col-md-9" style="padding-left: 30px;">
 			<div class="row"><div class="col-md-12"><h4>Canon 100mm 1:2.8 L Makro</h4></div></div>
 			<div class="row">
-				<div class="col-md-2"><p>Marke<br />Bajonett<br />Objektivtyp<br />Brennweite<br />Lichtstaerke<br /></p><p>Standort<br />Besitzer</p></div>
-				<div class="col-md-4"><p>Canon<br />EF<br />Fixbrennweite<br />100mm<br />1:2.8</p><p>St. Pölten<br />Mani 1 (98% positiv)</p></div>
+				<div class="col-md-2"><p>Marke<br />Bajonett<br />Objektivtyp<br />Brennweite<br />Lichtst&auml;rke<br /></p><p>Standort<br />Besitzer</p></div>
+				<div class="col-md-4"><p>Canon<br />EF<br />Fixbrennweite<br />100mm<br />1:2.8</p><p>St. P&ouml;lten<br />Mani 1 (98% positiv)</p></div>
 				<div class="col-md-3"><div id="datepicker-lendingTime" style="margin-top:-20px;"><input type="text" id="input"></div></div>
-				<div class="col-md-3" id="anfrageSendenBtn"><button type="button" class="btn btn-success">Anfrage senden</button></div>
+				<div class="col-md-3" id="anfrageSendenDiv"><button type="button" class="btn btn-success" id="anfrageBtn" data-toggle="modal" data-target="#anfrage">Anfrage senden</button></div>
 
 				<script type="text/javascript">
 	            $(document).ready(function () {
@@ -17,18 +17,24 @@
 		            $('#datepicker-lendingTime').datepicker({
 		                format: "dd/mm/yyyy",
 		                multidate: true,
-		                clearBtn: true
+		                clearBtn: true,
+		                pickTime: false,
+		                startDate: '+0d',
+		                endDate: '+31d'
 		            });
 		            
 		            $('#datepicker-lendingTime').datepicker().on('changeDate', function (e) {
 	   					 $('#input').val(e.format());
-	   					 $('#anfrageSendenBtn').show();
+	   					 if($('#input').value == ""){
+	   					 	alert("hello");
+	   					 }
+
+	   					 $('#anfrageSendenDiv').show();
 					});
 
-					$('#anfrageSendenBtn').hide();
+					$('#anfrageSendenDiv').hide()
 	            });
 	       		</script>
-
 			</div>
 		</div>
 	</div>

@@ -51,6 +51,7 @@ function loadMainPage () {
     $('#contentInclude').load("partials/main.html");
 }
 
+
  $(document).ready( function() {
     /* on page load */
     $(function(){
@@ -58,6 +59,7 @@ function loadMainPage () {
         $('#loginInclude').load("partials/anmelden-modal.html");
         $('#registerInclude').load("partials/register-modal.html");
         $('#inventarInclude').load("partials/inventar-modal.html");
+        $('#anfrageInclude').load("partials/anfrage-modal.html");
         logout();
         defaultProfileData();
     });
