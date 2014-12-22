@@ -97,4 +97,8 @@ function loadMainPage () {
     $(document).on ('click', '#logoLink', function () {
         loadMainPage();
     });
+
+    $(document).on ('click', '#userbewertungDoneBtn', function (){
+        $('#bewertung1').toggleClass('hide', true);
+    });
 });
